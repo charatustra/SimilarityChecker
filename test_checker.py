@@ -12,3 +12,6 @@ class TestChecker(TestCase):
 
     def test_checker_length_zero(self):
         self.assertEqual(0, self.checker.check("A", "BB"))
+
+    def test_checker_length_partial(self):
+        self.assertEqual(20, self.checker.check("AAABB", "BAA"))

@@ -17,8 +17,7 @@ class Checker:
             return self.calculate_partial_score(long_str, short_str)
 
     def calculate_partial_score(self, long_str, short_str):
-        return ((short_str.length - (long_str.length - short_str.length)) / short_str.length
-                * MAX_LENGTH_SCORE)
+        return (2 * short_str.length - long_str.length) / short_str.length * MAX_LENGTH_SCORE
 
     def assert_min_length_score(self, long_str, short_str):
         return long_str.length >= short_str.length * 2

@@ -1,3 +1,4 @@
+MIN_LENGTH_SCORE = 0
 MAX_LENGTH_SCORE = 60
 
 
@@ -6,4 +7,4 @@ class Checker:
         if len(left) == len(right):
             return MAX_LENGTH_SCORE
         else:
-            return 0
+            return MIN_LENGTH_SCORE
